@@ -8,7 +8,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 
-<title>MAIN</title>
+<title>DM|MAIN</title>
 <!-- Font-Awesome -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-item nav-link" href="#">ABOUT</a></li>
-                <li class="nav-item"><a class="nav-item nav-link" href="#">GAMES</a></li>
+                <li class="nav-item"><a class="nav-item nav-link" href="#Projects">PROJECTS</a></li>
               </ul>
               </div>
         </div>
@@ -66,30 +66,134 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12" style="padding:25px;">
-            <ul class="social-buttons mx-auto text-center">
-                <li><a href="https://github.com/CS683/lab-projectportal-dmakius" class="social-btn"><i class="fa fa-github"></i></a></li><!-- twitter -->
-                <li><a href="https://www.linkedin.com/in/daniel-makover-932962a4/" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- facebook -->
-            </ul>
-        </div>
+    <style>
+      .card-img-height{
+        height: 250px;
+      }
+
+      .hidden{
+        display: none;
+      }
+
+      #info-knowitall{
+        display: none;
+      }
+      #info-asteroids{
+        display: none;
+      }
+      #info-verticalMario{
+        display: none;
+      }
+      #info-megaman{
+        display: none;
+      }
+    </style>
+
+  <div class="container intro text-center section-padding">
+    <div class="row" id ="Projects">
+      <h1 class="arrow"><span>PROJECTS</span></h1>
+          <!-- Know It ALl CARD -->
+          <div class="col-md-4" style="margin-top: 15px;">
+            <div class="card card-height" >
+              <img src="img/KnowItAll.png" class="card-img-top card-img-height" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Know It All</h5>
+                <a id ="about-knowitall"class="btn btn-info" style="width: 100%; margin-bottom:10px ;">ABOUT</a>
+                <p id="info-knowitall" class="card-text">Semester Project for Software Engineering Course. Acted as Project Manger and Head Engineer.
+                   Built in Python, Flask, SQLPostGres</p>
+                <a href="https://knowitall-cs673.onrender.com/" class="btn btn-primary" style="width: 100%;">PLAY</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ASTEROIDS CARD -->
+          <div class="col-md-4" style="margin-top: 15px;">
+            <div class="card card-height" >
+              <img src="img/Asteroids.png" class="card-img-top card-img-height" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Asteroids</h5>
+                <a id="about-asteroids" class="btn btn-info" style="width: 100%; margin-bottom:10px ;">ABOUT</a>
+                <p id="info-asteroids" class="card-text">2D shooter sidescroller game built in JavaScript, PhaserJS, NodeJS, and MongoDB</p>
+                <a href="https://dmakius-games.azurewebsites.net/asteroids"  target="_blank" class="btn btn-primary" style="width: 100%;">PLAY</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- VERTICAL MARIO CARD -->
+          <div class="col-md-4"style="margin-top: 15px;">
+            <div class="card card-height" >
+              <img src="img/VerticalMario.png" class="card-img-top card-img-height" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Vertical Mario</h5>
+                <a id="about-verticalMario" class="col-md-5 btn btn-info" style="width: 100%;margin-bottom:10px ;">ABOUT</a>
+                <p id="info-verticalMario" class="card-text hidden">2D endless jumping game with everyone's favorite plumer. Built in JavaScript, PhaserJS, NodeJS, and MongoDB</p>
+                <a href="https://dmakius-games.azurewebsites.net/mario" target="_blank" class="btn btn-primary" style="width: 100%;">PLAY</a>
+
+              </div>
+              <div class="card-body" style="margin-top: -25px;">
+
+              </div>
+
+            </div>
+          </div>
+          
+          <!-- MEGAMAN CARD -->
+          <div class="col-md-4"style="margin-top: 15px;">
+            <div class="card card-height" >
+              <img src="img/mmrunner.png" class="card-img-top card-img-height" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MegaMan Runner</h5>
+                <a id="about-megaman" class="btn btn-info" style="width: 100%; margin-bottom:10px ;">ABOUT</a>
+                <p id="info-megaman" class="card-text">2D endless running game with everyone's favorite Blue Bomber. Built in JavaScript, PhaserJS, NodeJS, and MongoDB</p>
+                <a href="https://dmakius-games.azurewebsites.net/megaman"  target="_blank"class="btn btn-primary" style="width: 100%;">PLAY</a>
+              </div>
+            </div>
+          </div>
     </div>
+  </div>
+    
+  <div class="row">
+      <div class="col-md-12" style="padding:25px;">
+          <ul class="social-buttons mx-auto text-center">
+              <li><a href="https://github.com/dmakius"   target="_blank" class="social-btn"><i class="fa fa-github"></i></a></li><!-- twitter -->
+              <li><a href="https://www.linkedin.com/in/daniel-makover-932962a4/"  target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- facebook -->
+          </ul>
+      </div>
+  </div>
 
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script> 
 
-        <script type="text/javascript">
-            $(".rotate").textrotator({
-              animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-              separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-              speed: 2000 // How many milliseconds until the next word show.
-            });
-        </script>
+  <script type="text/javascript">
+    $('#about-knowitall').on('click', function(){
+      $('#info-knowitall').toggle();
+    });
 
-<div class="row footer" style="margin-top:15px;">
+    $('#about-asteroids').on('click', function(){
+      $('#info-asteroids').toggle();
+    });
+
+    $('#about-verticalMario').on('click', function(){
+      $('#info-verticalMario').toggle();
+    });
+
+
+    $('#about-megaman').on('click', function(){
+      $('#info-megaman').toggle();
+    });
+
+
+    $(".rotate").textrotator({
+        animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+        separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+        speed: 2000 // How many milliseconds until the next word show.
+      });
+  </script>
+
+  <div class="row footer" style="margin-top:15px;">
     <div class="col-md-12 text-center">
         <p>Powered By HaShem. &copy; 2023</a>
     </div>
-</div>
+  </div>
   </body>
 
 

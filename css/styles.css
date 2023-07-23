@@ -114,7 +114,7 @@ text-transform: uppercase;
         padding: 30px 20px 50px 20px;
      }
      .intro p {
-        margin:50px 0 0;
+        /* margin:50px 0 0; */
     }
 
     h1.arrow {
