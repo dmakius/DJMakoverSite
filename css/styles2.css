@@ -18,10 +18,7 @@ hr{
     position: sticky;
     top: 0px;
 }
-.nav-item a:hover{
-    background-color: #e5e5e5;
-    
-}
+
 
 .navbar-brand:hover{
     color: #e5e5e5;
