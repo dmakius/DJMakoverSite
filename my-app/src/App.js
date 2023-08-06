@@ -4,12 +4,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import Header from './components/header.jsx';
 import MainBody from './components/mainBody.jsx';
-
+import Footer from './components/footer.jsx';
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <MainBody/>
+      <Header/>
+      <MainBody/>
+      <Footer/>
 
       {/* /* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
